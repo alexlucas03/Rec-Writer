@@ -1,0 +1,28 @@
+# Electron runtime and builds
+/node_modules
+/dist
+/out
+/build
+/release
+
+# Electron framework
+/electron
+
+# Package manager files
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Development environment
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.env
