@@ -1,5 +1,5 @@
 {
-    "name": "teacher-writing-assistant",
+    "name": "rec-writer",
     "version": "1.0.0",
     "description": "AI writing assistant for teachers using local LLMs",
     "author": "Your Name",
@@ -31,7 +31,8 @@
         "eject": "react-scripts eject",
         "electron:dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && cross-env ELECTRON_START_URL=http://localhost:3000 NODE_ENV=development electron .\"",
         "electron:build": "npm run build && electron-builder",
-        "electron:mac": "npm run build && electron-builder --mac"
+        "electron:mac": "npm run build && electron-builder --mac",
+        "postinstall": "node install-ollama.js"
     },
     "build": {
         "appId": "com.example.teacher-llm-assistant",
